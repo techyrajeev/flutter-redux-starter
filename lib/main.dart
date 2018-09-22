@@ -11,12 +11,12 @@ import 'package:flutter_redux_starter/models/app_state.dart';
 import 'package:flutter_redux_starter/routes.dart';
 
 
-void main() => runApp(new D11SportPredictor());
+void main() => runApp(new MyApp());
 
-class D11SportPredictor extends StatelessWidget {
+class MyApp extends StatelessWidget {
     final store = createStore();
 
-    D11SportPredictor();
+    MyApp();
 
     @override
     Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class D11SportPredictor extends StatelessWidget {
             builder: (context) => new StoreProvider<AppState>(
                 store: store,
                 child: new MaterialApp(
-                    title: 'D11 Sport Predictor',
+                    title: 'Flutter test App',
                     theme: defaultTargetPlatform == TargetPlatform.iOS
                         ? kIOSTheme
                         : kDefaultTheme,
